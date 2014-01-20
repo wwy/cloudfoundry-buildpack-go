@@ -103,6 +103,7 @@ cp -R $build/* $p
 PATH=$GOROOT/bin:$PATH
 
 unset GIT_DIR # unset git dir or it will mess with goinstall
+unset GOBIN
 echo -n "-----> Running 'go get -tags cf ./...'..."
 ts=`date +%s`
 cd $p
